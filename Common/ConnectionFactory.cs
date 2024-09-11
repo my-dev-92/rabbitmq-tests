@@ -15,6 +15,8 @@ public class ConnectionFactory(ILogger<ConnectionFactory> logger)
         // this is required to be enable in order to consume messages asynchronously via AsyncEventingBasicConsumer
         DispatchConsumersAsync = true,
 
+        ConsumerDispatchConcurrency = 2,
+
         // make the client check every 30 seconds if the connection is still alive
         RequestedHeartbeat = TimeSpan.FromSeconds(5)
     };

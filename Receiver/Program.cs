@@ -27,6 +27,11 @@ hostBuilder.Services.AddScoped<ConnectionFactory>();
 hostBuilder.Services.AddSingleton<EventReceiver>();
 hostBuilder.Services.AddHostedService<Worker1>();
 hostBuilder.Services.AddHostedService<Worker2>();
+hostBuilder.Services.AddHostedService<Worker3>();
+hostBuilder.Services.AddHostedService<Worker4>();
+hostBuilder.Services.AddHostedService<Worker5>();
+hostBuilder.Services.AddHostedService<Worker6>();
+hostBuilder.Services.AddHostedService<Worker7>();
 
 var host = hostBuilder.Build();
 
